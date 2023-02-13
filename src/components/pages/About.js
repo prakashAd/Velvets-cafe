@@ -12,7 +12,7 @@ import {
   
   function About() {
     return (
-      <>
+      <>   
         <Navbar />
   
         <Box backgroundColor={"cornsilk"} p={"25px"} textAlign='center'>
@@ -39,7 +39,12 @@ import {
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                Greetings from Velvets cafe .Velvet Lounge & Bar situated at the heart of Jhamsikhel providing quality foods with excellent service, having spacious Lounge & Bar with Live performance to ensure that our valuable customers will have a " Relaxing Time".
-
+               Serving Happiness in a cup.
+              ☕ Coffee
+              🧉 Smoothie
+              🍹 Freshers
+              🥤 Milkshake & Thickshake.
+.
                PRICE RANGE
                NPR 50 - NPR 1,000
                CUISINES

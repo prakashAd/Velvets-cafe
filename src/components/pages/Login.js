@@ -10,7 +10,7 @@ function Login() {
       <div className="col-md-6 p-5 m-auto shadow-lg my-5">
       <main className="form-signin w-md-50 m-auto">
         <form>
-          <img className="mb-4" src="./online pasal image/images.png"alt=""width="72"height="57"/>
+          <img className="mb-4" src="./Slider images/velvets logo.png"alt=""width="72"height="57"/>
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
           <div className="form-floating">
@@ -27,7 +27,7 @@ function Login() {
               <input type="checkbox" value="remember-me" /> Remember me
             </label>
           </div>
-          <button className="w-100 btn btn-lg btn-success" type="submit">
+          <button className="w-100 btn btn-lg btn-info" type="submit">
             Sign in
           </button>
 

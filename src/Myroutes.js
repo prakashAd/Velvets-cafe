@@ -5,7 +5,8 @@ import Footer from './components/layout/Footer'
 import Login from './components/pages/Login'
 import FAQ from './components/pages/FAQ'
 import About from './components/pages/About'
-
+import Contact from './components/pages/Contact'
+import Register from './components/pages/Register'
 
 
 const Myroutes = () => {
@@ -17,6 +18,8 @@ const Myroutes = () => {
     <Route path ='/signin' element ={<Login/>}></Route>
     <Route path ='/faq' element ={<FAQ/>}></Route>
     <Route path ='/about' element ={<About/>}></Route>
+    <Route path ='/contact' element={<Contact/>}></Route>
+    <Route path ='/register' element ={<Register/>}></Route>
 
     </Routes>
     <Footer/>

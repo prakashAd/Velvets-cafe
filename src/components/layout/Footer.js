@@ -17,10 +17,10 @@ function Footer() {
       <li className="ms-3"><Link  className="text-muted" to="#">
       <i className="bi bi-twitter"></i> </Link></li>
 
-      <li className="ms-3"><Link  className="text-muted" to="#">
+      <li className="ms-3"><Link  className="text-muted" to="">
       <i className="bi bi-instagram"></i> </Link></li>
 
-      <li className="ms-3"><Link  className="text-muted" to="#">
+      <li className="ms-3"><Link  className="text-muted" to="https://www.facebook.com/VELVETSTHICKSHAKES">
       <i className="bi bi-facebook"></i> </Link></li>      
 
     </ul>
