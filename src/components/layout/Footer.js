@@ -8,12 +8,12 @@ function Footer() {
     
 <div className="container">
   <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p className="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+    <p className="col-md-4 mb-0 text-muted">&copy; 2017–2023 All Right Reserved Velvet's Cafe.Inc</p>
 
     <Link to="/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
     </Link>
 
-    <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <ul className="nav col-md-9 justify-content-end list-unstyled d-flex">
       <li className="ms-3"><Link  className="text-muted" to="#">
       <i className="bi bi-twitter"></i> </Link></li>
 
@@ -21,8 +21,14 @@ function Footer() {
       <i className="bi bi-instagram"></i> </Link></li>
 
       <li className="ms-3"><Link  className="text-muted" to="https://www.facebook.com/VELVETSTHICKSHAKES">
-      <i className="bi bi-facebook"></i> </Link></li>      
+      <i className="bi bi-facebook"></i> </Link></li>
+      
+      <li className="ms-3"><Link  className="text-muted" to="">
+      <i className="bi bi-whatsapp px-1"></i>9851012345</Link></li>
+      
 
+      <li className="ms-3 "><Link  className="text-muted" to="">
+      <i className="bi bi-envelope-at px-1"></i>velvetscafe2019@gmail.com </Link></li>
     </ul>
   </footer>
 </div>

@@ -1,50 +1,50 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { userRegister } from "../../api/userApi";
+import { userRegister } from "../../api/userApi";
+
 import Navbar from "../layout/Navbar";
 
-function Register() {
-//   let [username,setUsername] =useState('')
-//   let [email,setEmail] =useState('')
-//   let [password,setPassword] = useState('')
-//   let [error,setError] = useState('')
-//   let [success,setSuccess] =useState(false)
+const Register =()=> {
+  let [username,setUsername] =useState('')
+  let [email,setEmail] =useState('')
+  let [password,setPassword] = useState('')
+  let [error,setError] = useState('')
+  let [success,setSuccess] =useState(false)
 
-//   const handleSubmit =(e) =>{
-//     e.preventDefault()
-//     userRegister(username,email,password)     
-//     .then (data=>{
-//       if(data.error){
-//         setError(data.error)
-//         setSuccess(false)
+  const handleSubmit =(e) =>{
+    e.preventDefault()
+    userRegister(username,email,password)     
+    .then (data=>{
+      if(data.error){
+        setError(data.error)
+        setSuccess(false)
 
-//       }
-//       else{
-//         setSuccess(true)
-//         setError('')
-//       }
-//     })
-//   }
+      }
+      else{
+        setSuccess(true)
+        setError('')
+      }
+    })
+  }
 
-//   const showError =()=>{
-//     if(error){
-//       return <div className="alert alert-danger">{error}</div>
-//     }
-//   }
-  
-//   const showSuccess =()=>{
-//     if(success){
-//       return <div className="alert alert-success">User registered sucessfully.please check your mail</div>
-//     }
-//   }
+  const showError =()=>{
+    if(error){
+      return <div className="alert alert-danger">{error}</div>
+    }
+  }
+  const showSuccess =()=>{
+    if(success){
+      return <div className="alert alert-success">User registered sucessfully.please check your mail</div>
+    }
+  }
   
   return (
     <>
       <Navbar />
-      {/* {showError()}
-      {showSuccess()} */}
+      {showError()}
+      {showSuccess()}
 
-      <div className="row">
+      <div className="row1">
         <div className="col-md-6 p-5 m-auto shadow-lg my-5">
           <main className="form-signin w-md-50 m-auto">
             <form>
@@ -55,16 +55,16 @@ function Register() {
                 width="72"
                 height="57"
               />
-              <h1 className="h3 mb-3 fw-normal">Register</h1>
+              <h1 className="h3 mb-3 fw-normal text-center">Register</h1>
 
               <div className="form-floating">
                 <input
                   type="text"
                   className="form-control"
                   id="f-name"
-                  placeholder="first name" 
+                  placeholder="user name" onChange={(e)=>{setUsername(e.target.value)}}
                 />
-                <label htmlFor="l-name">User Name</label>
+                <label htmlFor="f-name">User Name</label>
               </div>
 {/*  
               <div className="form-floating">
@@ -110,7 +110,7 @@ function Register() {
                     type="email"
                     className="form-control"
                     id="floatingInput"
-                    placeholder="name@example.com" 
+                    placeholder="name@example.com" onChange={(e)=>setEmail(e.target.value)} 
                   />
                   <label htmlFor="floatingInput">Email address</label>
                 </div>
@@ -120,12 +120,12 @@ function Register() {
                   type="password"
                   className="form-control"
                   id="floatingPassword"
-                  placeholder="Password" 
+                  placeholder="Password" onChange={(e)=>setPassword(e.target.value)} 
                 />
                 <label htmlFor="floatingPassword">Password</label>
               </div>
 
-              <div className="form-floating">
+              {/* <div className="form-floating">
                 <input
                   type="password"
                   className="form-control"
@@ -133,7 +133,7 @@ function Register() {
                   placeholder="Confirm Password"
                 />
                 <label htmlFor="cfloatingPassword">Confirm Password</label>
-              </div>
+              </div> */}
 
               <div className="checkbox mb-3">
                 <label>
@@ -141,19 +141,19 @@ function Register() {
                   terms and conditions
                 </label>
               </div>
-              <button className="w-100 btn btn-lg btn-info" type="submit">
+              <button className="w-100 btn btn-lg btn-dark" type="submit">
                 Register
               </button>
 
               <span>
-                Already have an account? <Link to="/signin">Register here</Link>
+                Already have an account? <Link to="/signin" onClick={handleSubmit}>Register here</Link>
               </span>
 
               <span>
                 {" "}
-                <Link to="/forgetpassword">Forget password</Link>
+                <Link classname=" text-dark"to="/forgetpassword">Forget password</Link>
               </span>
-              <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+              <p className="mt-5 mb-3 text-muted">&copy; 2017–2023 All Right Reserved Velvet's Cafe</p>
             </form>
           </main>
         </div>

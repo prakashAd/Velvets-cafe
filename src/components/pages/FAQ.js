@@ -7,8 +7,8 @@ function FAQ() {
     <>
       <Navbar />
       <Container
-        maxWidth="xl"
-        sx={{ backgroundColor: "cornsilk", padding: "15px" }}
+        maxWidth="sm"
+        sx={{ backgroundColor: "White", padding: "15px" }}
       >
         <Box
           padding={5}

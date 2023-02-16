@@ -10,13 +10,13 @@ function Slider() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="./pg" className=" Slider_img d-block w-100"  alt="..."/>
+      <img src="./Slider images/exterior.jpg" className=" Slider_img d-block w-100"  alt="Unable to load image please reload"/>
     </div>
     <div className="carousel-item">
-      <img src="./exterior.jpg" className=" Slider_img d-block w-100" alt="..."/>
+      <img src="./Slider images/interior 1.jpg" className=" Slider_img d-block w-100" alt="Unable to load image please reload"/>
     </div>
     <div className="carousel-item">
-      <img src="./" className=" Slider_img d-block w-100" alt="..."/>
+      <img src="./Slider images/interior 3.jpg" className=" Slider_img d-block w-100" alt="Unable to load image please reload"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button bg:darkn" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

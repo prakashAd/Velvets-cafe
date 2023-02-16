@@ -8,34 +8,33 @@ function Contact() {
   return (
     <>
     <Navbar/>
-
-   
-     <Box className='container bg-light p-5 m-auto mt-5'>
+    <h3  className='conrtainer text-center'>CONTACT US</h3>
+     <Box className='container  p-5 m-auto mt-5'>
       <Box className='top' display='flex'>
-      <Box className='Address'maxWidth={345} p={5} backgroundColor={'cornsilk'}>
-      <Typography variant='h3'color={'dark.light'} >
+      <Box className='Address'maxWidth={345} p={5}>
+      <Typography variant='h4'color={'dark.light'} >
         Velvets cafe
           </Typography>  
         
-          <Typography variant='h4'color={'dark.light'} sx={{textDecoration:'underline'}}>
+          <Typography variant='h5'color={'dark.light'} sx={{textDecoration:'underline'}}>
            Address:
           </Typography>        
                
-          <Typography variant='h5'color={'dark.light'}>
+          <Typography variant='h6'color={'dark.light'}>
           Kathmandu,Nepal
           </Typography>        
-          <Typography variant='h5'color={'dark.light'} >
+          <Typography variant='h6'color={'dark.light'} >
            Phone no:014387079
           </Typography>  
-          <Typography variant='h5'color={'dark.light'} >
-           Email:onlinestorenepal@gmail.com
-          </Typography>  <Typography variant='h5'color={'dark.light'} sx={{textDecoration:'underline'}}>
-          Website:www.onlinestorenepal.com.np
+          <Typography variant='h6'color={'dark.light'} >
+           Email:velvetscafe123@gmail.com
+          </Typography>  <Typography variant='h6'color={'dark.light'} sx={{textDecoration:'underline'}}>
+          Website:www.velvetscafe123.com.np
           </Typography>        
 
       
     </Box>
-    <Box className='contact-form'maxWidth={'345'} p={5} backgroundColor={'cornsilk'} borderLeft={3} borderColor={'warning.light'}>
+    <Box className='contact-form'maxWidth={'345'} p={5} >
        
         <Typography>
         Contact form
@@ -44,7 +43,7 @@ function Contact() {
         <TextField label="Subject" variant="outlined"placeholder='enter your email'fullWidth autoComplete='off'helperText='required' color='primary' multiline required Size='small' margin='normal'/>
         <TextField label="Body" variant="outlined"placeholder='enter your email'fullWidth autoComplete='off'helperText='required' color='primary' multiline required Size='small' margin='normal' maxRows={5} minRows={5}/>
         <Button variant ='contained'color='success'
-         startIcon= {<SendIcon/>}>Submit</Button>
+         startIcon= {<SendIcon/>}>Send</Button>
         </Typography>
     </Box>
 

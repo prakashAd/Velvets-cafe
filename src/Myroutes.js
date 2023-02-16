@@ -7,6 +7,8 @@ import FAQ from './components/pages/FAQ'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Register from './components/pages/Register'
+import Departments from './components/pages/Departments'
+import Notification from './components/pages/Notification'
 
 
 const Myroutes = () => {
@@ -20,7 +22,8 @@ const Myroutes = () => {
     <Route path ='/about' element ={<About/>}></Route>
     <Route path ='/contact' element={<Contact/>}></Route>
     <Route path ='/register' element ={<Register/>}></Route>
-
+    <Route path ='/notification' element={<Notification/>}></Route>
+    <Route path ='/products' element={<Departments/>}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>

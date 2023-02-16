@@ -4,7 +4,6 @@ import {
     CardMedia,
     CardActions,
     CardContent,
-    Button,
   } from "@mui/material";
   import { Box } from "@mui/system";
   import React from "react";
@@ -15,11 +14,11 @@ import {
       <>   
         <Navbar />
   
-        <Box backgroundColor={"cornsilk"} p={"25px"} textAlign='center'>
+        <Box backgroundColor={"white"} p={"25px"} textAlign='center'>
           <Typography
             variant="h4"
             sx={{ textDecoration: "underline" }}
-            color="success.light"
+            color="dark"
             textAlign={"center"}
           >
             About us

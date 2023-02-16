@@ -6,12 +6,12 @@ function Login() {
   return (
     <>
       <Navbar />
-      <div className="row">
+      <div className="row2">
       <div className="col-md-6 p-5 m-auto shadow-lg my-5">
       <main className="form-signin w-md-50 m-auto">
         <form>
           <img className="mb-4" src="./Slider images/velvets logo.png"alt=""width="72"height="57"/>
-          <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+          <h1 className="h3 mb-3 fw-normal text-center">Please sign in</h1>
 
           <div className="form-floating">
              <input type="email"className="form-control"id="floatingInput"placeholder="name@example.com"/>
@@ -27,7 +27,7 @@ function Login() {
               <input type="checkbox" value="remember-me" /> Remember me
             </label>
           </div>
-          <button className="w-100 btn btn-lg btn-info" type="submit">
+          <button className="w-100 btn btn-lg btn-dark" type="submit">
             Sign in
           </button>
 
@@ -38,7 +38,6 @@ function Login() {
             <span> <Link to ='/forgetpassword'>Forget password</Link></span>
 
           </div>
-          <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
         </form>
       </main>
       </div>
