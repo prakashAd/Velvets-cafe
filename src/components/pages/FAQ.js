@@ -19,7 +19,6 @@ function FAQ() {
         >
           <Typography
             variant="h4"
-            sx={{ textDecoration: "underline" }}
             color="dark"
             textAlign="Center"
             marginTop={5}
@@ -82,7 +81,7 @@ function FAQ() {
             color="primary"
             marginBottom={5}
           >
-            Question4:How to track my order from Daraz?
+            Question4:How to track my order from Velvets?
           </Typography>
           <Typography variant="h6" color="dark">
             Answer:To track your order please enter your Order ID in the box

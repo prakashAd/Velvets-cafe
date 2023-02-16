@@ -34,7 +34,7 @@ const Register =()=> {
   }
   const showSuccess =()=>{
     if(success){
-      return <div className="alert alert-success">User registered sucessfully.please check your mail</div>
+      return <div className="alert alert-success">User Registered sucessfully.Please check your Email fro Verification</div>
     }
   }
   
@@ -43,7 +43,6 @@ const Register =()=> {
       <Navbar />
       {showError()}
       {showSuccess()}
-
       <div className="row1">
         <div className="col-md-6 p-5 m-auto shadow-lg my-5">
           <main className="form-signin w-md-50 m-auto">
@@ -146,7 +145,7 @@ const Register =()=> {
               </button>
 
               <span>
-                Already have an account? <Link to="/signin" onClick={handleSubmit}>Register here</Link>
+                Already have an account? <Link to="/login" onClick={handleSubmit}>Register here</Link>
               </span>
 
               <span>

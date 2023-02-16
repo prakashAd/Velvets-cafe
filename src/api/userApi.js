@@ -5,7 +5,7 @@ export const userRegister = (username, email, password) =>{
     return fetch(`${API}/register`,{
         method: "POST",
         headers: {
-            "COntent-Type":"applicarion/json"
+            "Content-Type":"applicarion/json"
         },
         body:JSON.stringify({user})
     })
